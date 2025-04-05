@@ -72,7 +72,7 @@ const messageType = ref("");
 const isDragging = ref(false);
 const schoolYear = ref("");
 
-let api = "https://5sis-gateway-testing.fsel.edu.vn/learning-gateway/v1/report/export-semester-result-report";
+let api = import.meta.env.VITE_API_BASE_URL;
 
 const triggerFileInput = () => {
     if (!isLoading.value) {
